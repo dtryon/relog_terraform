@@ -3,7 +3,6 @@ environment = "dev"
 
 # Availability Zone
 relog_az = "eu-west-1a"
-relog_az_redundancy = "eu-west-1b"
 
 ##############################################################
 #### - Relog Subnets
@@ -12,8 +11,6 @@ relog_az_redundancy = "eu-west-1b"
 relog_public_cidr            = "10.30.0.0/28"
 relog_dmz_cidr               = "10.30.0.16/28"
 relog_app_cidr               = "10.30.1.0/24"
-relog_data_cidr              = "10.30.10.0/27"
-relog_data_redundancy_cidr   = "10.30.10.32/27"
 
 
 ##############################################################
@@ -24,11 +21,10 @@ relog_data_redundancy_cidr   = "10.30.10.32/27"
 rev_proxy.ami                     = "ami-a10897d6"
 rev_proxy.availability_zone       = "eu-west-1a"
 rev_proxy.key_name                = "Relog Environments"
-rev_proxy.instance_type           = "m2.micro"
+rev_proxy.instance_type           = "t2.micro"
 
 # app_services
 app_services.ami                      = "ami-a10897d6"
 app_services.availability_zone        = "eu-west-1a"
 app_services.key_name                 = "Relog Environments"
-app_services.instance_type            = "m2.micro"
-app_services.ebs_volume_size          = "64"
+app_services.instance_type            = "t2.micro"

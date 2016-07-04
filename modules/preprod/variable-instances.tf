@@ -17,6 +17,5 @@ variable "app_services" {
         availability_zone = "az_variable"
         key_name          = "key_name_variable"
         instance_type     = "instance_type_variable"
-        ebs_volume_size   = "ebs_volume_size"
     }
 }

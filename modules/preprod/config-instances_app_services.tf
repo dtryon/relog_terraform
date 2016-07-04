@@ -12,11 +12,6 @@ resource "aws_instance" "relog_app_services" {
     vpc_security_group_ids      = ["${aws_security_group.relog_app_services_security_group.id}"]
     associate_public_ip_address = false
     monitoring                  = true
-    ebs_optimized               = true
-    root_block_device {
-        volume_type = "gp2"
-        volume_size = "${var.app_services.ebs_volume_size}"
-    }
     tags {
         Environment = "${var.environment}"
         Role = "app_services"

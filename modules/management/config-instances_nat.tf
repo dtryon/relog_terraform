@@ -13,7 +13,6 @@ resource "aws_instance" "relog_nat" {
     root_block_device {
         volume_type           = "gp2"
         volume_size           = 8
-        iops                  = 24
         delete_on_termination = true
     }
 

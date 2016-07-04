@@ -19,8 +19,8 @@ variable "environment" {}
 #### - Relog AZ Variables
 ##############################################################
 
-variable "mixerati_az" {
-    default = "mixerati_az"
+variable "relog_az" {
+    default = "relog_az"
 }
 
 
@@ -28,15 +28,15 @@ variable "mixerati_az" {
 #### - Relog Subnet Variables (defaults)
 ##############################################################
 
-variable "mixerati_public_cidr" {
+variable "relog_public_cidr" {
     default = "public_cidr_variable"
 }
 
-variable "mixerati_dmz_cidr" {
+variable "relog_dmz_cidr" {
     default = "dmz_cidr_variable"
 }
 
-variable "mixerati_app_cidr" {
+variable "relog_app_cidr" {
     default = "app_cidr_variable"
 }
 
